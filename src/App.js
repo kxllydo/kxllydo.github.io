@@ -1,22 +1,16 @@
 import './App.css';
+import Header from './components/Header'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className='highlighted'>
-          Hi there,
-        </p>
-        <h1>My name is Kelly Do</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className ="App">
+      <nav id = 'navbar'>
+        <a href = 'http://localhost:3000/'>About</a>
+        <a>Experience</a>
+        <a>Projects</a>
+        <a id = 'resume-btn'>Resume</a>
+      </nav>
+      <Header />
     </div>
   );
 }

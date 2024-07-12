@@ -1,27 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 .App {
   display: flex;
   flex-direction: column;
+  margin: 0 10%;
+}
+
+header{
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  background-color: #36453b;
 }
 
 .App-header {
-  background-color: #082128;
-  min-height: 97vh;
+  min-height: 97VH;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  padding: 0;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.App-header > h1{
-  color:#7d9da6;
+.highlighted {
+  color: #92D8EB;
 }
 
-.highlighted {
-  color: #84def7;
+.text{
+  color: #f6f3ec;
+  font-family: 'Hind', 'Roboto';
+  /* color: #8EB4D3 */
+}
 
+#navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 3%;
+  gap: 3%;
+}
+
+a {
+  text-decoration: none;
+  color: #f6f3ec;
+}
+
+#resume-btn{
+  padding: 2px 6px;
+  border-radius: 2px;
+  background-color:#f6f3ec;
+  color:#36453b;
+}
+
+#resume-btn:hover{
+  border-top: solid 1px #f6f3ec;
+  background-color:#f6f3ec;
+  color:#36453b;
+  box-shadow: 3px 4px #5e7967;
 }

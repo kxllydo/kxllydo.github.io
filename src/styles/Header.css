@@ -1,5 +1,5 @@
 #name-header{
     padding: 0;
     margin: 0;
-    font-size: 75px;
+    font-size: calc(20px + 10vmin)
 }

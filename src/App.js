@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header'
+import Projects from './components/Projects';
 import Work from './components/Work,';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       </nav>
       <Header />
       <Work />
+      <Projects />
     </div>
   );
 }

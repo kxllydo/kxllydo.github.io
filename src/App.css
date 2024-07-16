@@ -87,7 +87,7 @@ a {
   box-shadow: 5px 7px #5e7967; /* Larger box shadow on hover */
 }
 
-.container {
+.element {
   margin: 0 10%;
 }
 
@@ -100,4 +100,11 @@ a {
 
 h1{
   color: #E9F4F6;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }

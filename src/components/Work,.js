@@ -7,9 +7,9 @@ const Work = () => {
     const [locationName, setLocationName] = useState(workplaces[0])
 
     return (
-        <div className="container">
+        <div className="element">
             <h1 id ='experience'>Professional Experience</h1>
-            <div className='resume-container'>
+            <div className='container'>
                 <ScrollBar setLocationName = {setLocationName} locationName={locationName}/>
                 <ResumeInfo locationName = {locationName} />
             </div>

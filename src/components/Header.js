@@ -2,7 +2,7 @@ import '../styles/Header.css'
 
 const Header = () => {
     return(
-        <header className="App-header">
+        <header id="App-header">
         <div className="text">
           <p className='highlighted' style = {{fontSize : '20px'}}>Hi there! My name is</p>
           <h1 id='name-header'>Kelly Do</h1>

@@ -8,7 +8,7 @@ const Work = () => {
 
     return (
         <div className="container">
-            <h1>Professional Experience</h1>
+            <h1 id ='experience'>Professional Experience</h1>
             <div className='resume-container'>
                 <ScrollBar setLocationName = {setLocationName} locationName={locationName}/>
                 <ResumeInfo locationName = {locationName} />

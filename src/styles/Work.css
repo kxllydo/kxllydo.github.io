@@ -1,7 +1,7 @@
 .workplace{
     border:none;
-    border-left: solid 2px #98ADB1;
-    padding: 15px 20px 15px 15px;
+    border-left: solid 3px #98ADB1;
+    padding: 15px 60px 15px 15px;
     color: #98ADB1;
     background-color: inherit;
     font: inherit;
@@ -34,7 +34,6 @@
     margin-left: 1%;
     border-radius: 3px;
 }
-
 
 .points{
     color:#98ADB1;

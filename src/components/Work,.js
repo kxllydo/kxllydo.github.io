@@ -1,7 +1,7 @@
 import '../styles/Work.css';
 import { useEffect, useState } from 'react';
 
-const workplaces = ['Aramark']
+const workplaces = ['Aramark', 'Apple']
 
 const Work = () => {
     const [locationName, setLocationName] = useState(workplaces[0])
@@ -26,11 +26,14 @@ const ScrollBar = ({locationName, setLocationName}) => {
     useEffect (() => {
         const otherBtns = document.querySelectorAll ('.workplace');
         Array.from(otherBtns).forEach(btn => {
-            btn.style.borderLeft = '2px solid #98ADB1';
+            btn.style.borderLeft = '3px solid #98ADB1';
+            btn.style.color = '#98ADB1'
+
         })
 
         const currentBtn = document.getElementById(locationName);
-        currentBtn.style.borderLeft = '2px solid #6DF1B3'; 
+        currentBtn.style.borderLeft = '3px solid #6DF1B3'; 
+        currentBtn.style.color = '#6DF1B3'
     }, [locationName]);
 
     return (

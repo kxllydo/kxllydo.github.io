@@ -1,17 +1,32 @@
 .demo-img{
-    width:800px;
+    width:0;
     height: auto;
     border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    
 }
+
+.demo-img.active {
+    opacity: 1; /* Show the active image */
+    width: 100% ;
+}
+
 
 .dot-btn{
     border-radius:70px;
-    padding: 0 6px;
+    padding: 0 5px;
     border: none;
     color:#98ADB1;
     background-color: #98ADB1;
     cursor: pointer;
     margin: 5px 8px;
+    font-size: 11px;
+}
+
+
+.dot-btn.active{
+    background-color: #6DF1B3;
 }
 
 #img-carousel{
@@ -27,7 +42,48 @@
     color: #0a9bb8;
 }
 
-#img-btn1{
-    color:inherit;
-    background-color:#6DF1B3;
+.showcase{
+    position : relative;
+}
+
+.project-info{
+    /* background-color: #0c373d; */
+    height: fit-content;
+    margin-left: 2%;
+}
+
+#triangle-btn-right{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #98ADB1;
+    margin-left: 2%;
+}
+
+#triangle-btn-left{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #98ADB1;
+    margin-right: 2%;
+}
+
+
+#triangle-btn-right:hover{
+    border-left:solid 15px #6DF1B3;
+}
+
+#triangle-btn-left:hover{
+    border-right:solid 15px #6DF1B3;
+}
+
+.skill-bubble{
+    background-color: #0c373d ;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 4px 9px;
+    margin-left:35px;
+    color:#98ADB1;
 }

@@ -3,7 +3,7 @@
     height: auto;
     border-radius: 8px;
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
     
 }
 
@@ -59,6 +59,7 @@
     border-bottom: 15px solid transparent;
     border-left: 15px solid #98ADB1;
     margin-left: 2%;
+    position:relative;
 }
 
 #triangle-btn-left{
@@ -86,4 +87,10 @@
     padding: 4px 9px;
     margin-left:35px;
     color:#98ADB1;
+}
+
+#carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

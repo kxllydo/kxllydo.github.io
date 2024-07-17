@@ -1,6 +1,10 @@
 import '../styles/Projects.css';
 import BudgetBuddy1 from '../imgs/BudgetBuddy1.png';
 import BudgetBuddy2 from '../imgs/BudgetBuddy2.png';
+import BestProfessor1 from '../imgs/BestProfessor1.png';
+import BestProfessor2 from '../imgs/BestProfessor2.png';
+import SpotiU1 from '../imgs/SpotiU1.png';
+import SpotiU2 from '../imgs/SpotiU2.png';
 import {projectNames, skills, bulletPoints} from '../info/project-info.js';
 import { useEffect, useState } from 'react';
 
@@ -30,6 +34,29 @@ const Skills = ({ skills }) => {
     );
 };
 
+const DemoImages = ({currentPg, currentBtn}) => {
+    return (
+        <div className='showcase'>
+            {currentPg === 'Budget Buddy' ? (
+                <div style={{width: '42vw'}}>
+                    <img src={BudgetBuddy1} className={`demo-img ${currentBtn === 'img-btn1' ? 'active' : ''}`} id='img-1' alt=''></img>
+                    <img src={BudgetBuddy2} className={`demo-img ${currentBtn === 'img-btn2' ? 'active' : ''}`} id='img-2' alt=''></img>
+                </div>
+            ) : currentPg === 'Best Professor' ? (
+                <div style={{width: '42vw'}}>
+                    <img src={BestProfessor1} className={`demo-img ${currentBtn === 'img-btn1' ? 'active' : ''}`} id='img-1' alt=''></img>
+                    <img src={BestProfessor2} className={`demo-img ${currentBtn === 'img-btn2' ? 'active' : ''}`} id='img-2' alt=''></img>
+                </div>
+            ) : (
+                <div style={{width: '42vw'}}>
+                    <img src={SpotiU1} className={`demo-img ${currentBtn === 'img-btn1' ? 'active' : ''}`} id='img-1' alt=''></img>
+                    <img src={SpotiU2} className={`demo-img ${currentBtn === 'img-btn2' ? 'active' : ''}`} id='img-2' alt=''></img>
+                </div>
+            )}
+        </div>
+    )
+}
+
 
 const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIndex, setCurrentIndex}) => {
     const nextPage = (event) => {
@@ -42,6 +69,7 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
         }
         setCurrentIndex(newIndex);
         setCurrentPg(projectNames[newIndex]);
+        setCurrentBtn('img-btn1');
     };
 
     const backPage = (event) => {
@@ -54,6 +82,8 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
         }
         setCurrentIndex(newIndex);
         setCurrentPg(projectNames[newIndex]);
+        setCurrentBtn('img-btn1');
+
     };
 
     const changeImg = (event) => {
@@ -65,12 +95,7 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
         <div className = 'container' style={{alignItems: 'center'}}>
             <button id='triangle-btn-left' onClick={backPage}>;</button>
             <div id = 'img-carousel'>
-                <div className='showcase'>
-                    <div style={{width: '42vw'}}>
-                        <img src={BudgetBuddy1} className={`demo-img ${currentBtn === 'img-btn1' ? 'active' : ''}`} id='img-1' alt=''></img>
-                        <img src={BudgetBuddy2} className={`demo-img ${currentBtn === 'img-btn2' ? 'active' : ''}`} id='img-2' alt=''></img>
-                    </div>
-                </div>
+                <DemoImages currentPg={currentPg} currentBtn={currentBtn}/>
 
                 <div id = 'carousel-btns'>
                     <button className={`dot-btn ${currentBtn == 'img-btn1' ? 'active' : ''}`} id = 'img-btn1' onClick={changeImg}>.</button>

@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header'
 import Projects from './components/Projects';
 import Work from './components/Work,';
+import FadeInSection from './components/Fade';
+
 
 function App() {
   return (
@@ -12,9 +14,15 @@ function App() {
         <a>Projects</a>
         <a id = 'resume-btn'>Resume</a>
       </nav>
-      <Header />
-      <Work />
-      <Projects />
+      <FadeInSection>
+        <Header />
+      </FadeInSection>
+      <FadeInSection>
+        <Work />
+      </FadeInSection>
+      <FadeInSection>
+        <Projects />
+      </FadeInSection>
     </div>
   );
 }

@@ -47,9 +47,37 @@
 }
 
 .project-info{
-    /* background-color: #0c373d; */
     height: fit-content;
+    padding: 2% 0px
+}
+
+.corner{
+    /* background-color: #0c373d; */
     margin-left: 2%;
+    position: relative;
+}
+
+.corner::before,
+.corner::after {
+  content: '';
+  position: absolute;
+  width: 40px; /* Adjust thickness of the borders */
+  height: 40px; /* Adjust thickness of the borders */
+  border: 2px solid rgb(255, 255, 255); /* Border color and thickness */
+}
+
+.corner::before {
+  top: 0;
+  left: 0;
+  border-right: none; /* Remove border on right */
+  border-bottom: none; /* Remove border on bottom */
+}
+
+.corner::after {
+  bottom: 0;
+  right: 0;
+  border-left: none; /* Remove border on left */
+  border-top: none; /* Remove border on top */
 }
 
 #triangle-btn-right{
@@ -87,10 +115,28 @@
     padding: 4px 9px;
     margin-left:35px;
     color:#98ADB1;
+    margin-bottom: 2%;
 }
 
 #carousel{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#skills-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.icon{
+    width: 30px;
+    height: auto;
+    color: #E9F4F6;
+}
+
+.icon:hover{
+    color:#6DF1B3;
+    cursor: pointer;
 }

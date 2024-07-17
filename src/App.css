@@ -13,6 +13,11 @@ header{
   background-color: #0A282E;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 #App-header {
   min-height: 97VH;
   display: flex;
@@ -22,7 +27,16 @@ header{
   font-size: calc(10px + 2vmin);
   padding: 0;
   margin: 0 10%;
+  animation: fadeIn 2s;
+}
 
+.fade-in {
+  opacity: 0; /* Initial state */
+  animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+}
+
+.fade-in-visible {
+  opacity: 1;
 }
 
 .App-link {
@@ -88,7 +102,7 @@ a {
 }
 
 .element {
-  margin: 0 10%;
+  margin: 2% 6% 10% 10%;
 }
 
 #name-header{
@@ -114,3 +128,4 @@ button{
   cursor: pointer;
   background-color: inherit;
 }
+

@@ -7,6 +7,7 @@ import SpotiU1 from '../imgs/SpotiU1.png';
 import SpotiU2 from '../imgs/SpotiU2.png';
 import {projectNames, skills, bulletPoints} from '../info/project-info.js';
 import { useEffect, useState } from 'react';
+import IconGitHub from './icons/github.js';
 
 console.log(projectNames);
 const Projects = () => {
@@ -24,9 +25,9 @@ const Projects = () => {
 
 const Skills = ({ skills }) => {
     return (
-        <div className='container'>
+        <div id='skills-container'>
             {skills.map((skill, index) => (
-                <div key={index} className='skill-bubble'>
+                <div className='skill-bubble'>
                     {skill}
                 </div>
             ))}
@@ -83,7 +84,6 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
         setCurrentIndex(newIndex);
         setCurrentPg(projectNames[newIndex]);
         setCurrentBtn('img-btn1');
-
     };
 
     const changeImg = (event) => {
@@ -102,14 +102,19 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
                     <button className={`dot-btn ${currentBtn == 'img-btn2' ? 'active' : ''}`} id = 'img-btn2' onClick={changeImg}>.</button>                
                 </div>
             </div>
+            <div className='corner'>
             <div className='project-info'>
+                <div className='first-line'>
                 <h1 className='position-title' style={{marginLeft : '35px'}}>{currentPg}</h1>
+                <IconGitHub />
+                </div>
                 <ul className='bullets'>
                    {bulletPoints[currentPg].map((point, index) =>(
                     <li className='points'>{point}</li>
                    ))}
                 </ul>
                 <Skills skills={skills[currentPg]}/>
+            </div>
             </div>
             <button id='triangle-btn-right' onClick={nextPage}> </button>
 

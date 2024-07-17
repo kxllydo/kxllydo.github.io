@@ -17,7 +17,7 @@ const Projects = () => {
 
     return (
         <div className="element">
-            <h1>Projects</h1>
+            <h1 id = 'project-section'>Projects</h1>
             <Carousel currentBtn = {currentBtn} setCurrentBtn={setCurrentBtn} currentPg = {currentPg} setCurrentPg = {setCurrentPg} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
         </div>
     )
@@ -102,7 +102,6 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
                     <button className={`dot-btn ${currentBtn == 'img-btn2' ? 'active' : ''}`} id = 'img-btn2' onClick={changeImg}>.</button>                
                 </div>
             </div>
-            <div className='corner'>
             <div className='project-info'>
                 <div className='first-line'>
                 <h1 className='position-title' style={{marginLeft : '35px'}}>{currentPg}</h1>
@@ -114,7 +113,6 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
                    ))}
                 </ul>
                 <Skills skills={skills[currentPg]}/>
-            </div>
             </div>
             <button id='triangle-btn-right' onClick={nextPage}> </button>
 

@@ -11,7 +11,7 @@ function App() {
       <nav id = 'navbar'>
         <a href = '#App-header'>About</a>
         <a href = '#experience'>Experience</a>
-        <a>Projects</a>
+        <a href = '#project-section'>Projects</a>
         <a id = 'resume-btn'>Resume</a>
       </nav>
       <FadeInSection>

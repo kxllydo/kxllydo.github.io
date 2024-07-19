@@ -17,8 +17,11 @@ const Projects = () => {
 
     return (
         <div className="element">
-            <h1 id = 'project-section'>Projects</h1>
+            <h1 id = 'project-section'>Featured Projects</h1>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems : 'center'}}>
             <Carousel currentBtn = {currentBtn} setCurrentBtn={setCurrentBtn} currentPg = {currentPg} setCurrentPg = {setCurrentPg} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+            <button id = 'all-projects-btn'>All Projects</button>
+            </div>
         </div>
     )
 }
@@ -60,6 +63,8 @@ const DemoImages = ({currentPg, currentBtn}) => {
 
 
 const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIndex, setCurrentIndex}) => {
+    const repoName = currentPg.replace(/\s+/g, '');
+
     const nextPage = (event) => {
         event.preventDefault();
         let newIndex;
@@ -105,7 +110,8 @@ const Carousel = ({currentBtn, setCurrentBtn, currentPg, setCurrentPg, currentIn
             <div className='project-info'>
                 <div className='first-line'>
                 <h1 className='position-title' style={{marginLeft : '35px'}}>{currentPg}</h1>
-                <IconGitHub />
+                <a href = {`https://github.com/kxllydo/${repoName}`} target = '_blank' rel="noopener noreferrer">
+                <IconGitHub measurement={'30px'}/> </a>
                 </div>
                 <ul className='bullets'>
                    {bulletPoints[currentPg].map((point, index) =>(

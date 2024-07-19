@@ -1,4 +1,4 @@
-export const projectNames = ['Budget Buddy', 'Best Professor', 'SpotiU']
+export const projectNames = ['Best Professor', 'Budget Buddy', 'SpotiU']
 export const skills = {
     'Budget Buddy' : ['SQL', 'Python', 'Flask', 'Chart.py', 'React'],
     'Best Professor' : ['GraphQL', 'JavaScript', 'Selenium', 'Spring-boot', 'Java'],

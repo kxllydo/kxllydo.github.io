@@ -1,9 +1,11 @@
 import React from 'react';
 
-const IconGitHub = () => (
+const IconGitHub = ({measurement}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     role="img"
+    width={measurement}
+    height={measurement}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"

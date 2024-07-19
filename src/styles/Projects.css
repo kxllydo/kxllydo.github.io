@@ -102,8 +102,6 @@
   }
 
 .icon{
-    width: 30px;
-    height: auto;
     color: #E9F4F6;
 }
 
@@ -112,3 +110,13 @@
     cursor: pointer;
 }
 
+#all-projects-btn{
+    padding: 4px 10px;
+    color: #6DF1B3;
+    border-radius : 6px;
+    border: 2px solid #6DF1B3;
+}
+
+span{
+    color:#6DF1B3;
+}

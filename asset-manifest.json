@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.07075580.css",
-    "main.js": "/static/js/main.48dddca4.js",
+    "main.css": "/static/css/main.60ae4d78.css",
+    "main.js": "/static/js/main.3d84e2a7.js",
+    "static/media/SpotiU2.png": "/static/media/SpotiU2.7ad6fb557449add185b6.png",
+    "static/media/SpotiU1.png": "/static/media/SpotiU1.be35a399a6c1e250f380.png",
+    "static/media/BudgetBuddy1.png": "/static/media/BudgetBuddy1.500533a616042d1dc414.png",
+    "static/media/BestProfessor2.png": "/static/media/BestProfessor2.54c591477d50fb1a3d88.png",
+    "static/media/BudgetBuddy2.png": "/static/media/BudgetBuddy2.1e6295716a859323d527.png",
+    "static/media/BestProfessor1.png": "/static/media/BestProfessor1.a71f90bd5d573a45797b.png",
     "index.html": "/index.html",
-    "main.07075580.css.map": "/static/css/main.07075580.css.map",
-    "main.48dddca4.js.map": "/static/js/main.48dddca4.js.map"
+    "main.60ae4d78.css.map": "/static/css/main.60ae4d78.css.map",
+    "main.3d84e2a7.js.map": "/static/js/main.3d84e2a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.07075580.css",
-    "static/js/main.48dddca4.js"
+    "static/css/main.60ae4d78.css",
+    "static/js/main.3d84e2a7.js"
   ]
 }

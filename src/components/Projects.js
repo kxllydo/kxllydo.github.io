@@ -16,11 +16,11 @@ const Projects = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <div className="element">
-            <h1 id = 'project-section'>Featured Projects</h1>
+        <div id="projects" className="element">
+            <h1>Featured Projects</h1>
             <div style={{display: 'flex', flexDirection: 'column', alignItems : 'center'}}>
             <Carousel currentBtn = {currentBtn} setCurrentBtn={setCurrentBtn} currentPg = {currentPg} setCurrentPg = {setCurrentPg} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
-            <button id = 'all-projects-btn'>All Projects</button>
+            {/* <button id = 'all-projects-btn'>All Projects</button> */}
             </div>
         </div>
     )

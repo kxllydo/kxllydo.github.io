@@ -15,10 +15,14 @@
 }
 
 .workplace:hover{
-    background-color:  #0c3138;;
-    color: #6DF1B3;
+    background-color:  hsl(213, 45%, 25%);
+    /* color: #6DF1B3; */
+    color : hsl(184, 100%, 57%);
 }
 
+.fancy:hover{
+    text-decoration: underline hsl(184, 100%, 57%);
+}
 
 .position-title{
     font-weight: 500;
@@ -35,13 +39,16 @@
 
 .points{
     color:#98ADB1;
+    font-size: 17px;
     list-style:none;
     padding-bottom: 2%; 
 }
 
 .points::before {
     content: "◈ ";
-    color: #6DF1B3; /* Change the color of the bullet if needed */
+    /* color: #6DF1B3; */
+    color : hsl(184, 100%, 57%);
+
     left: 0; /* Position it to the left of the list item */
 }
 

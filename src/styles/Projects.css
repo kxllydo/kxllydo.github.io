@@ -26,7 +26,7 @@
 
 
 .dot-btn.active{
-    background-color: #6DF1B3;
+    background-color: hsl(184, 100%, 57%);
 }
 
 #img-carousel{
@@ -72,15 +72,16 @@
 
 
 #triangle-btn-right:hover{
-    border-left:solid 15px #6DF1B3;
+    border-left:solid 15px hsl(184, 100%, 57%);
 }
 
 #triangle-btn-left:hover{
-    border-right:solid 15px #6DF1B3;
+    border-right:solid 15px hsl(184, 100%, 57%);
 }
 
 .skill-bubble{
-    background-color: #0c373d ;
+    /* background-color: #0c373d ; */
+    background-color: hsl(213, 45%, 25%);
     border-radius: 10px;
     width: fit-content;
     padding: 4px 9px;
@@ -106,17 +107,21 @@
 }
 
 .icon:hover{
-    color:#6DF1B3;
+    color:hsl(184, 100%, 57%);
     cursor: pointer;
 }
 
 #all-projects-btn{
     padding: 4px 10px;
-    color: #6DF1B3;
+    /* color: #6DF1B3; */
+    color: hsl(184, 100%, 57%);
     border-radius : 6px;
-    border: 2px solid #6DF1B3;
+    /* border: 2px solid #6DF1B3; */
+    border: 2px solid hsl(184, 100%, 57%);
+
 }
 
 span{
-    color:#6DF1B3;
+    /* color:#6DF1B3; */
+    color : hsl(184, 100%, 57%);
 }

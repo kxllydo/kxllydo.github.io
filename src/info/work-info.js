@@ -16,3 +16,15 @@ export const workInfo = {
         'location' : 'Philadelphia, PA'
     }
 }
+
+export const highlightedProjectWords = {
+    'Aramark' : ['Pandas',
+    'Openpyxl',
+    'saving 90%',
+    '$10,000+',
+    'UiPath',
+    'Azure',
+    'SWQL',
+    'ServiceNow',
+    '1000+ users'],
+}

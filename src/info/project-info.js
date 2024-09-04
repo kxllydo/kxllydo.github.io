@@ -17,7 +17,7 @@ export const bulletPoints = {
         "Created JavaScript functions that filtered through 1-100 professors’ ratings to proficiently output the best professors per course within seconds, ensuring that the user has a quick and informational result",
     ],
     'SpotiU' : [
-        'Develop Python scripts using Spotify’s Web API to optimize Spotify’s song recommendations for the user',
+        'Develop Python scripts using Spotify’s Web API to optimize Spotify’s song  recommendations for the user',
         'Utilize Spotipy lib to process JSON data (artists, tracks, and playlists) to create filters for Spotify-generated playlists',
         'Implement user authorization with Oauth 2.0 framework for secure access about listening history and preferences'
     ]

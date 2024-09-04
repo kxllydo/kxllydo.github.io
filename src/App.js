@@ -6,24 +6,26 @@ import FadeInSection from './components/Fade';
 
 
 function App() {
+
+
   return (
-    <div className ="App">
+    <div id = "about" className ="App">
       <nav id = 'navbar'>
-        <a href = '#App-header'>About</a>
+        <a href = '#about'>About</a>
         <a href = '#experience'>Experience</a>
-        <a href = '#project-section'>Projects</a>
-        <a id = 'resume-btn'>Resume</a>
+        <a href = '#projects'>Projects</a>
+        <a href ='/resume.pdf' id = 'resume-btn' >Resume</a>
       </nav>
-      <FadeInSection>
         <Header />
-      </FadeInSection>
       <FadeInSection>
         <Work />
       </FadeInSection>
       <FadeInSection>
         <Projects />
       </FadeInSection>
+      <footer><p>hi</p></footer>
     </div>
+
   );
 }
 

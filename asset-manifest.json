@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d400f2d.css",
-    "main.js": "/static/js/main.da2a6d44.js",
+    "main.css": "/static/css/main.cf36cc87.css",
+    "main.js": "/static/js/main.71ff8da6.js",
     "static/media/SpotiU2.png": "/static/media/SpotiU2.7ad6fb557449add185b6.png",
     "static/media/SpotiU1.png": "/static/media/SpotiU1.1be3feb42ff5e64a600c.png",
     "static/media/BudgetBuddy1.png": "/static/media/BudgetBuddy1.500533a616042d1dc414.png",
     "static/media/BudgetBuddy2.png": "/static/media/BudgetBuddy2.1e6295716a859323d527.png",
-    "static/media/BestProfessor2.png": "/static/media/BestProfessor2.732e4d76d5d43af45573.png",
-    "static/media/BestProfessor1.png": "/static/media/BestProfessor1.438ae8500e6b4f22f63a.png",
+    "static/media/BestProfessor2.png": "/static/media/BestProfessor2.c89d4414cf57af0f9c21.png",
+    "static/media/BestProfessor1.png": "/static/media/BestProfessor1.2ce984ba4e21b0b704da.png",
     "index.html": "/index.html",
-    "main.4d400f2d.css.map": "/static/css/main.4d400f2d.css.map",
-    "main.da2a6d44.js.map": "/static/js/main.da2a6d44.js.map"
+    "main.cf36cc87.css.map": "/static/css/main.cf36cc87.css.map",
+    "main.71ff8da6.js.map": "/static/js/main.71ff8da6.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d400f2d.css",
-    "static/js/main.da2a6d44.js"
+    "static/css/main.cf36cc87.css",
+    "static/js/main.71ff8da6.js"
   ]
 }

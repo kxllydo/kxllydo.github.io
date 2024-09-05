@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf36cc87.css",
-    "main.js": "/static/js/main.71ff8da6.js",
+    "main.css": "/static/css/main.6888973e.css",
+    "main.js": "/static/js/main.9ef5f30c.js",
     "static/media/SpotiU2.png": "/static/media/SpotiU2.7ad6fb557449add185b6.png",
     "static/media/SpotiU1.png": "/static/media/SpotiU1.1be3feb42ff5e64a600c.png",
     "static/media/BudgetBuddy1.png": "/static/media/BudgetBuddy1.500533a616042d1dc414.png",
     "static/media/BudgetBuddy2.png": "/static/media/BudgetBuddy2.1e6295716a859323d527.png",
     "static/media/BestProfessor2.png": "/static/media/BestProfessor2.c89d4414cf57af0f9c21.png",
     "static/media/BestProfessor1.png": "/static/media/BestProfessor1.2ce984ba4e21b0b704da.png",
+    "static/media/help.svg": "/static/media/help.f2670424a43b6e1bb780.svg",
     "index.html": "/index.html",
-    "main.cf36cc87.css.map": "/static/css/main.cf36cc87.css.map",
-    "main.71ff8da6.js.map": "/static/js/main.71ff8da6.js.map"
+    "main.6888973e.css.map": "/static/css/main.6888973e.css.map",
+    "main.9ef5f30c.js.map": "/static/js/main.9ef5f30c.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf36cc87.css",
-    "static/js/main.71ff8da6.js"
+    "static/css/main.6888973e.css",
+    "static/js/main.9ef5f30c.js"
   ]
 }

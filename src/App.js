@@ -23,7 +23,6 @@ function App() {
       <FadeInSection>
         <Projects />
       </FadeInSection>
-      <footer><p>hi</p></footer>
     </div>
 
   );

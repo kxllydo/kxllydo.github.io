@@ -6,8 +6,8 @@ const Work = () => {
     const [locationName, setLocationName] = useState(workplaces[0])
 
     return (
-        <div id = 'experience' className="element" style = {{margin: '0 10% 0 10%'}}>
-            <h1>Professional Experience</h1>
+        <div id = 'experience' className="element" style = {{margin: '100px 10% 75px 10%'}}>
+            <h1 className='section'>Professional Experience</h1>
             <div className='container fade-in'>
                 <ScrollBar setLocationName = {setLocationName} locationName={locationName}/>
                 <ResumeInfo locationName = {locationName} />

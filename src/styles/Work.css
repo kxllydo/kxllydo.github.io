@@ -66,3 +66,18 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (min-width: 2000px) {
+    .workplace{
+        font-size: 22px;
+    }
+    .position-title{
+        font-size: 30px;
+    }
+    .points {
+        font-size: 20px;
+    }
+    .sub-info {
+        font-size: 21px;
+    }
+  }

@@ -24,8 +24,9 @@ header{
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   padding: 0;
-  margin: 4% 10% 10% 10%;
-  /* animation: fadeIn 2s; */
+  background-image: url('./components/icons/help.svg');
+  background-size: cover;
+  height: 100vh;
 }
 
 .fade-in {
@@ -52,6 +53,8 @@ header{
   /* color: #8EB4D3 */
   /* color: #98ADB1; recent*/
   color: #a1bbce;
+    margin: 4% 10% 10% 10%;
+
 }
 
 #navbar{
@@ -105,7 +108,7 @@ a {
 }
 
 .element {
-  margin: 0 5% 0 5%;
+  margin: 0 5% 20px 5%;
 }
 
 #name-header{
@@ -136,4 +139,10 @@ button{
   width: 100px;
   margin-right: 20px;
   height: 100px;
+}
+
+@media (min-width: 2000px) {
+  .section{
+    font-size: 40px;
+  }
 }
